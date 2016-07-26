@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package task.goeuro.goeurotest.api;
 
 import task.goeuro.goeurotest.objects.SuggestedPosition;
@@ -123,7 +118,7 @@ public class Client {
                 positionRecords.add(String.valueOf(suggestedPosition.getGeographicalPosition().getLongitude()));
                 csvFilePrinter.printRecord(positionRecords);
             }
-            System.out.println("CSV Response File Created Successfully");
+            System.out.println("CSV Response File Created Successfully Under Directory " + System.getProperty("user.dir"));
         } catch (Exception e) {
             System.out.println("Error in CSV File Writer");
         } finally {
